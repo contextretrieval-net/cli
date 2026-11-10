@@ -3,7 +3,7 @@
   "tagline": "What happens after the fetch: chunking, retrieval and citations for web RAG.",
   "domain": "contextretrieval.net",
   "bin": "contextretrieval",
-  "npm": "contextretrieval",
+  "npm": "@contextretrieval-net/cli",
   "org": "contextretrieval-net",
   "repo": "cli",
   "siteUrl": "https://contextretrieval.net",

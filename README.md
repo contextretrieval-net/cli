@@ -8,8 +8,8 @@ It is the command line client for the [Live Web Data API](https://contextretriev
 ## Quick start
 
 ```bash
-npx contextretrieval login                                   # paste your API key (not echoed)
-npx contextretrieval fetch https://example.com -o text       # the page as Markdown
+npx @contextretrieval-net/cli login                                   # paste your API key (not echoed)
+npx @contextretrieval-net/cli fetch https://example.com -o text       # the page as Markdown
 ```
 
 Get a key at [contextretrieval.net](https://contextretrieval.net). Node.js 18 or later.
@@ -17,7 +17,7 @@ Get a key at [contextretrieval.net](https://contextretrieval.net). Node.js 18 or
 ## Install
 
 ```bash
-npm install -g contextretrieval
+npm install -g @contextretrieval-net/cli
 contextretrieval --help
 ```
 
