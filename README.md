@@ -68,7 +68,8 @@ Requests and your key only ever go to the base URL, never to a server named in t
 ## Links
 
 - [contextretrieval.net](https://contextretrieval.net)
-- [Docs](https://contextretrieval.net/docs)
+- [CLI docs](https://contextretrieval.net/docs/cli)
+- [API docs](https://contextretrieval.net/docs)
 - [API spec](https://livewebdata.com/openapi.json)
 
 ## License
