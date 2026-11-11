@@ -3,7 +3,7 @@
 What happens after the fetch: chunking, retrieval and citations for web RAG.
 
 `contextretrieval` fetches live web pages as clean Markdown, text or HTML, straight from your terminal or your agent's shell.
-It is the command line client for the [Live Web Data API](https://contextretrieval.net) by Context Retrieval.
+It is the command line client for the [Live Web Data API](https://livewebdata.com).
 
 ## Quick start
 
@@ -74,4 +74,4 @@ Requests and your key only ever go to the base URL, never to a server named in t
 
 ## License
 
-MIT, © Teneo Labs Inc.
+MIT, © contextretrieval.net

@@ -22,7 +22,7 @@
     "url": "git+https://github.com/contextretrieval-net/cli.git"
   },
   "license": "MIT",
-  "author": "Teneo Labs Inc.",
+  "author": "contextretrieval.net",
   "type": "module",
   "bin": {
     "contextretrieval": "bin/cli.js"
