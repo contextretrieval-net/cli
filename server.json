@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "net.contextretrieval/contextretrieval",
+  "title": "Context Retrieval API",
+  "description": "Fetch public web pages live and get clean Markdown, text or HTML.",
+  "version": "0.1.0",
+  "websiteUrl": "https://contextretrieval.net/docs/mcp",
+  "icons": [
+    {
+      "src": "https://contextretrieval.net/site-assets/contextretrieval-net/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contextretrieval.net/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your Context Retrieval API key as a bearer token: Bearer 1337_live_…",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

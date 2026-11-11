@@ -8,7 +8,8 @@
   "repo": "cli",
   "siteUrl": "https://contextretrieval.net",
   "docsUrl": "https://contextretrieval.net/docs",
-  "apiName": "Live Web Data API",
-  "apiBaseUrl": "https://livewebdata.com/api",
-  "specUrl": "https://livewebdata.com/openapi.json"
+  "apiName": "Context Retrieval API",
+  "envPrefix": "CONTEXTRETRIEVAL",
+  "apiBaseUrl": "https://contextretrieval.net/api",
+  "specUrl": "https://contextretrieval.net/openapi.json"
 }
