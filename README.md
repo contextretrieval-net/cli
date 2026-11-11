@@ -36,6 +36,35 @@ contextretrieval fetch --help                                           # every 
 A fetch that is still running after about 100 seconds is collected automatically with the same
 `Idempotency-Key`, so it is charged once.
 
+## MCP server
+
+The Context Retrieval API is also a remote MCP server (Streamable HTTP) at `https://contextretrieval.net/mcp`, with the tools
+`get_page_contents` and `get_account_status`. It takes the same API key as a bearer token.
+
+```bash
+claude mcp add --transport http contextretrieval https://contextretrieval.net/mcp \
+  --header "Authorization: Bearer $CONTEXTRETRIEVAL_API_KEY"
+```
+
+Any other client: URL `https://contextretrieval.net/mcp`, header `Authorization: Bearer <key>`. Config for Cursor, VS Code and
+Claude Desktop: [MCP docs](https://contextretrieval.net/docs/mcp). The server's entry for the MCP Registry is [server.json](server.json)
+(`net.contextretrieval/contextretrieval`).
+
+## Agent plugin and skill
+
+This repo is also a plugin for Claude Code, Grok Build and Gemini CLI, and holds an agent skill. Each one connects the
+MCP server above and teaches the agent when to fetch a page with it or with `contextretrieval`.
+
+```bash
+npx skills add contextretrieval-net/cli                                    # the skill, for any agent that reads SKILL.md
+claude plugin marketplace add contextretrieval-net/cli && claude plugin install contextretrieval@contextretrieval
+gemini extensions install https://github.com/contextretrieval-net/cli
+```
+
+Network and credentials: the plugin calls `https://contextretrieval.net/mcp` only, and the CLI `https://contextretrieval.net/api` and
+`https://contextretrieval.net/openapi.json`. Both need one credential, your Context Retrieval API key, read from `CONTEXTRETRIEVAL_API_KEY`. No hooks, no
+scripts run on install.
+
 ## The commands follow the live API
 
 `contextretrieval` builds its commands and options from the API's OpenAPI document at

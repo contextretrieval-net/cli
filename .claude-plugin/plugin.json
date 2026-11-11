@@ -1,0 +1,19 @@
+{
+  "name": "contextretrieval",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the Context Retrieval API: its remote MCP server and the contextretrieval CLI.",
+  "author": {
+    "name": "Context Retrieval",
+    "url": "https://contextretrieval.net"
+  },
+  "homepage": "https://contextretrieval.net",
+  "repository": "https://github.com/contextretrieval-net/cli",
+  "license": "MIT",
+  "keywords": [
+    "contextretrieval",
+    "web-fetch",
+    "markdown",
+    "mcp",
+    "cli"
+  ]
+}

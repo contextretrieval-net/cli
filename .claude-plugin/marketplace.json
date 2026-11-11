@@ -1,0 +1,17 @@
+{
+  "name": "contextretrieval",
+  "owner": {
+    "name": "Context Retrieval",
+    "url": "https://contextretrieval.net"
+  },
+  "metadata": {
+    "description": "The Context Retrieval plugin: Context Retrieval API MCP server and skill."
+  },
+  "plugins": [
+    {
+      "name": "contextretrieval",
+      "source": "./",
+      "description": "Fetch public web pages live as clean Markdown, text or HTML through the Context Retrieval API: its remote MCP server and the contextretrieval CLI."
+    }
+  ]
+}

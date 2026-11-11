@@ -1,0 +1,21 @@
+{
+  "name": "contextretrieval",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the Context Retrieval API: its remote MCP server and the contextretrieval CLI.",
+  "mcpServers": {
+    "contextretrieval": {
+      "httpUrl": "https://contextretrieval.net/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONTEXTRETRIEVAL_API_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "API key",
+      "description": "Your Context Retrieval API key, from https://contextretrieval.net",
+      "envVar": "CONTEXTRETRIEVAL_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

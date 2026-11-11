@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "contextretrieval": {
+      "type": "http",
+      "url": "https://contextretrieval.net/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONTEXTRETRIEVAL_API_KEY}"
+      }
+    }
+  }
+}
