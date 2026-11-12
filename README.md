@@ -1,7 +1,5 @@
 # Context Retrieval CLI
 
-What happens after the fetch: chunking, retrieval and citations for web RAG.
-
 `contextretrieval` fetches live web pages as clean Markdown, text or HTML, straight from your terminal or your agent's shell.
 It is the command line client for the [Context Retrieval API](https://contextretrieval.net).
 

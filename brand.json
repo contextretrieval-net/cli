@@ -1,6 +1,5 @@
 {
   "name": "Context Retrieval",
-  "tagline": "What happens after the fetch: chunking, retrieval and citations for web RAG.",
   "domain": "contextretrieval.net",
   "bin": "contextretrieval",
   "npm": "@contextretrieval-net/cli",
