@@ -61,9 +61,10 @@ claude plugin marketplace add contextretrieval-net/cli && claude plugin install 
 gemini extensions install https://github.com/contextretrieval-net/cli
 ```
 
-Network and credentials: the plugin calls `https://contextretrieval.net/mcp` only, and the CLI `https://contextretrieval.net/api` and
-`https://contextretrieval.net/openapi.json`. Both need one credential, your Context Retrieval API key, read from `CONTEXTRETRIEVAL_API_KEY`. No hooks, no
-scripts run on install.
+Network and credentials: the plugin calls `https://contextretrieval.net/mcp` only. The CLI calls `https://contextretrieval.net/api` and
+`https://contextretrieval.net/openapi.json`, and `https://registry.npmjs.org` (`npx` and a once-a-day update check, off with
+`CONTEXTRETRIEVAL_NO_UPDATE_NOTIFIER=1`). Both need one credential, your Context Retrieval API key,
+read from `CONTEXTRETRIEVAL_API_KEY` or saved by `contextretrieval login`. No hooks, no scripts run on install.
 
 ## The commands follow the live API
 
